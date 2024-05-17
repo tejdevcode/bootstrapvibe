@@ -10,64 +10,698 @@
 </head>
 
 <body>
-   <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-   </div>
 
-   <div class="container accordion" id="accordionExample">
-      <div class="accordion-item">
-         <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-               aria-expanded="true" aria-controls="collapseOne">
-               Accordion Item #1
+   <header>
+
+      <nav class="navbar navbar-expand-lg navbar-light position-absolute w-100 start-0 z-2 pt-4">
+         <div class="container">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="brand logo" /></a>
+            <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
             </button>
-         </h2>
-         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-               <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-               plugin adds the appropriate classes that we use to style each element. These classes control the overall
-               appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-               CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
-               the <code>.accordion-body</code>, though the transition does limit overflow.
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+               <ul class="navbar-nav ">
+                  <li class="nav-item mx-2 active">
+                     <a class="nav-link text-white fs-5" href="#">Home </a>
+                  </li>
+                  <li class="nav-item mx-2">
+                     <a class="nav-link text-white fs-5" href="#">Services</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                     <a class="nav-link text-white fs-5" href="#">Products</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                     <a class="nav-link text-white fs-5 " href="#">Blog</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                     <a class="nav-link text-white fs-5 " href="#">About us</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                     <a class="nav-link text-white fs-5 " href="#">Contact us</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <!-- herosection -->
+   <section class="herobnr position-relative z-1 pt-5">
+      <div class="objimg herobg"></div>
+      <div class="container">
+         <div class="herobnrslider py-5 ">
+            <div id="carouselExampleIndicators" class="carousel slide d-flex align-items-center"
+               data-bs-ride="carousel">
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                     class="active rounded-circle w-2 m-2" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                     aria-label="Slide 2" class="rounded-circle w-2 m-2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                     aria-label="Slide 3" class="rounded-circle w-2 m-2"></button>
+               </div>
+               <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="6000">
+                     <div class="row gx-4 align-items-center py-lg-5 py-sm-3 py-1">
+                        <div class="text-white pe-3 col col-md-6 pb-4 pb-sm-0">
+                           <div class="herotxtin">
+                              <h1 class="fw-bold">Experience the Future of Living with Smart Tech</h1>
+                              <p class="fs-5">Revolutionizing tomorrow with today's technology.</p>
+                              <button
+                                 class="btn btn-primary text-uppercase text-white link-light rounded-1 px-lg-4 px-3 animbtn">View
+                                 More</button>
+                           </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6">
+                           <img src="./img/heroart.png" alt="hero art" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="6000">
+                     <div class="row gx-4 align-items-center py-lg-5 py-sm-3 py-1">
+                        <div class="text-white pe-3 col col-md-6 pb-4 pb-sm-0">
+                           <div class="herotxtin">
+                              <h1 class="fw-bold">Experience the Future of Living with Smart Tech</h1>
+                              <p class="fs-5">Revolutionizing tomorrow with today's technology.</p>
+                              <button
+                                 class="btn btn-primary text-uppercase text-white link-light rounded-1 px-lg-4 px-3 animbtn">View
+                                 More</button>
+                           </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6">
+                           <img src="./img/heroart.png" alt="hero art" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="6000">
+                     <div class="row gx-4 align-items-center py-lg-5 py-sm-3 py-1">
+                        <div class="text-white pe-3 col col-md-6 pb-4 pb-sm-0">
+                           <div class="herotxtin">
+                              <h1 class="fw-bold">Experience the Future of Living with Smart Tech</h1>
+                              <p class="fs-5">Revolutionizing tomorrow with today's technology.</p>
+                              <button
+                                 class="btn btn-primary text-uppercase text-white link-light rounded-1 px-lg-4 px-3 animbtn">View
+                                 More</button>
+                           </div>
+
+                        </div>
+                        <div class="col-12 col-sm-6">
+                           <img src="./img/heroart.png" alt="hero art" />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+   </section>
+
+   <!-- services -->
+   <section class="services text-center py-md-5 py-sm-4 py-3" id="services">
+      <div class="container">
+         <div class="top_txt col py-1 py-md-3">
+            <h2 class="text-uppercase mb-md-4 mb-2 fw-bold">OUR SERVICES</h2>
+         </div>
+         <div class="row gx-4 row-gap-3">
+            <div class="serviceitem col-12 col-lg-4 col-md-6">
+               <div class="card w-100 bg-white">
+                  <img src="./img/service1.jpg" class="card-img-top" alt="service">
+                  <div class="card-body">
+                     <div class="rounded-circle border border-4 border-white sricon"><i
+                           class="bi bi-gear-wide-connected text-primary"></i>
+                     </div>
+                     <h3 class="card-title text-capitalize mb-3">Home Tech passage Installation </h3>
+                     <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots
+                        in a piece of classical</p>
+                     <a href="#" class="btn btn-primary text-white link-light text-uppercase mb-2 animbtn">Installation
+                        Quote</a>
+                  </div>
+               </div>
+            </div>
+            <div class="serviceitem col-12 col-lg-4 col-md-6">
+               <div class="card w-100 bg-white">
+                  <img src="./img/service2.jpg" class="card-img-top" alt="service">
+                  <div class="card-body">
+                     <div class="rounded-circle border border-4 border-white sricon"><i
+                           class="bi bi-house-gear-fill text-primary"></i>
+                     </div>
+                     <h3 class="card-title text-capitalize mb-3"> Tech Passage Repair maintainance </h3>
+                     <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots
+                        in a piece of classical</p>
+                     <a href="#" class="btn btn-primary text-white link-light text-uppercase mb-2 animbtn">view
+                        service</a>
+                  </div>
+               </div>
+            </div>
+            <div class="serviceitem col-12 col-lg-4 col-md-6">
+               <div class="card w-100 bg-white">
+                  <img src="./img/service3.jpg" class="card-img-top" alt="product">
+                  <div class="card-body">
+                     <div class="rounded-circle border border-4 border-white sricon"><i
+                           class="bi bi-building-gear text-primary"></i>
+                     </div>
+                     <h3 class="card-title text-capitalize mb-3">smart home passage Installation </h3>
+                     <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots
+                        in a piece of classical</p>
+                     <a href="#" class="btn btn-primary text-white link-light text-uppercase mb-2 animbtn">book
+                        service</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row text-center">
+            <div class="col mt-5"><img src="./img/ad.jpg" alt="ad"></div>
+         </div>
+      </div>
+   </section>
+
+   <!-- products -->
+   <section class="products py-md-5 py-sm-4 py-3" id="products">
+      <div class="container">
+         <div class="top_txt text-center">
+            <h2 class="text-uppercase mb-md-4 mb-2 fw-bold">Products</h2>
+         </div>
+         <div class="row gx-4 row-gap-3">
+            <div class="col-12 col-xl-3 col-lg-4 col-md-6">
+               <div class="card border border-0">
+                  <img src="./img/pr1.jpg" class="card-img-top w-100" alt="product">
+                  <div class="card-body">
+                     <h5 class="card-title mb-3 mb-md-4">Nest Learning Comp</h5>
+                     <div class="d-flex align-items-start mb-2">
+                        <p class="card-text fw-bold me-5"><strong>$219.99</strong></p>
+                        <div class="starating">
+                           <ul class="d-flex text-primary list-unstyled">
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li class="text-black-50 ">(21)</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#"
+                        class="btn btn-primary text-uppercase bg-body border border-dark text-dark cartanimbtn">Add to
+                        cart</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-4 col-md-6">
+               <div class="card border border-0">
+                  <img src="./img/pr2.jpg" class="card-img-top w-100" alt="product">
+                  <div class="card-body">
+                     <h5 class="card-title mb-3 mb-md-4">White ans color start kit for nide lighting</h5>
+                     <div class="d-flex align-items-start mb-2">
+                        <p class="card-text fw-bold me-5"><strong>$319.99</strong></p>
+                        <div class="starating">
+                           <ul class="d-flex text-primary list-unstyled">
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li class="text-black-50 ">(21)</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#"
+                        class="btn btn-primary text-uppercase bg-body border border-dark text-dark cartanimbtn">Add to
+                        cart</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-4 col-md-6">
+               <div class="card border border-0">
+                  <img src="./img/pr3.jpg" class="card-img-top w-100" alt="product">
+                  <div class="card-body">
+                     <h5 class="card-title mb-3 mb-md-4">Nova Smart pro + multindigo connect</h5>
+                     <div class="d-flex align-items-start mb-2">
+                        <p class="card-text fw-bold me-5"><strong>$239.99</strong></p>
+                        <div class="starating">
+                           <ul class="d-flex text-primary list-unstyled">
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li class="text-black-50 ">(21)</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#"
+                        class="btn btn-primary text-uppercase bg-body border border-dark text-dark cartanimbtn">Add to
+                        cart</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-4 col-md-6">
+               <div class="card border border-0">
+                  <img src="./img/pr4.jpg" class="card-img-top w-100" alt="product">
+                  <div class="card-body">
+                     <h5 class="card-title mb-3 mb-md-4">Niyo doorbell pro</h5>
+                     <div class="d-flex align-items-start mb-2">
+                        <p class="card-text fw-bold me-5"><strong>$139.99</strong></p>
+                        <div class="starating">
+                           <ul class="d-flex text-primary list-unstyled">
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li class="text-black-50 ">(21)</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#"
+                        class="btn btn-primary text-uppercase bg-body border border-dark text-dark cartanimbtn">Add to
+                        cart</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-4 col-md-6">
+               <div class="card border border-0">
+                  <img src="./img/pr5.jpg" class="card-img-top w-100" alt="product">
+                  <div class="card-body">
+                     <h5 class="card-title mb-3 mb-md-4">Smart thermo with voice controllar</h5>
+                     <div class="d-flex align-items-start mb-2">
+                        <p class="card-text fw-bold me-5"><strong>$329.99</strong></p>
+                        <div class="starating">
+                           <ul class="d-flex text-primary list-unstyled">
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li class="text-black-50 ">(21)</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#"
+                        class="btn btn-primary text-uppercase bg-body border border-dark text-dark cartanimbtn">Add to
+                        cart</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-4 col-md-6">
+               <div class="card border border-0">
+                  <img src="./img/pr6.jpg" class="card-img-top w-100" alt="product">
+                  <div class="card-body">
+                     <h5 class="card-title mb-3 mb-md-4">IRobot Techinfo output</h5>
+                     <div class="d-flex align-items-start mb-2">
+                        <p class="card-text fw-bold me-5"><strong>$129.99</strong></p>
+                        <div class="starating">
+                           <ul class="d-flex text-primary list-unstyled">
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li class="text-black-50 ">(21)</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#"
+                        class="btn btn-primary text-uppercase bg-body border border-dark text-dark cartanimbtn">Add to
+                        cart</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-4 col-md-6">
+               <div class="card border border-0">
+                  <img src="./img/pr7.jpg" class="card-img-top w-100" alt="product">
+                  <div class="card-body">
+                     <h5 class="card-title mb-3 mb-md-4">Nest learning thermomeater</h5>
+                     <div class="d-flex align-items-start mb-2">
+                        <p class="card-text fw-bold me-5"><strong>$219.99</strong></p>
+                        <div class="starating">
+                           <ul class="d-flex text-primary list-unstyled">
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li class="text-black-50 ">(21)</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#"
+                        class="btn btn-primary text-uppercase bg-body border border-dark text-dark cartanimbtn">Add to
+                        cart</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-xl-3 col-lg-4 col-md-6">
+               <div class="card border border-0">
+                  <img src="./img/pr8.jpg" class="card-img-top w-100" alt="product">
+                  <div class="card-body">
+                     <h5 class="card-title mb-3 mb-md-4">White and light pro max inductcator</h5>
+                     <div class="d-flex align-items-start mb-2">
+                        <p class="card-text fw-bold me-5"><strong>$199.99</strong></p>
+                        <div class="starating">
+                           <ul class="d-flex text-primary list-unstyled">
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li><i class="bi bi-star-fill"></i></li>
+                              <li class="text-black-50 ">(21)</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#"
+                        class="btn btn-primary text-uppercase bg-body border border-dark text-dark cartanimbtn">Add to
+                        cart</a>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-      <div class="accordion-item">
-         <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-               data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-               Accordion Item #2
-            </button>
-         </h2>
-         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-               <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-               plugin adds the appropriate classes that we use to style each element. These classes control the overall
-               appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-               CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
-               the <code>.accordion-body</code>, though the transition does limit overflow.
+   </section>
+
+   <!-- popular Articel -->
+   <section class="popularart py-md-5 py-sm-4 py-3" id="popularart">
+      <div class="container">
+         <div class="top_txt text-center">
+            <h2 class="text-uppercase mb-md-4 mb-2 fw-bold">Popular Articels</h2>
+         </div>
+         <div class="row gx-2 row-gap-2">
+            <div class="col-12 col-lg-6 ">
+               <div class="card text-bg-dark border border-0 position-relative">
+                  <div class="bgshadow position-absolute bottom-0 z-1"></div>
+                  <img src="./img/ar1.jpg" class="card-img objimg" alt="art image">
+                  <div class="card-img-overlay align-content-end flex-wrap z-1">
+                     <div class="d-flex">
+                        <button
+                           class="btn btn-success text-white link-light text-capitalize mb-2 rounded-3 me-2 py-0">Smart
+                           Home</button>
+                        <button
+                           class="btn btn-primary text-white link-light text-capitalize mb-2  rounded-3 me-2 py-0">Gadgets</button>
+                     </div>
+                     <h5 class="card-title text-capitalize w-100 twolinelimit">Home techonoligy vs. Smart Home
+                        <br />automation
+                        technology
+                     </h5>
+                     <p class="card-text"><small>SmartTech - Nov 29, 2026</small></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-lg-6 rightcol">
+               <div class="row gx-2 row-gap-2">
+                  <div class="col-12">
+                     <div class="card text-bg-dark border border-0 position-relative">
+                        <div class="bgshadow position-absolute bottom-0 z-1"></div>
+                        <img src="./img/ar2.jpg" class="card-img objimg" alt="art image">
+                        <div class="card-img-overlay align-content-end flex-wrap z-1">
+                           <div class="d-flex">
+                              <button
+                                 class="btn btn-success text-white link-light text-capitalize mb-2 rounded-3 me-2 py-0">Smart
+                                 Home</button>
+                              <button
+                                 class="btn btn-primary text-white link-light text-capitalize mb-2  rounded-3 me-2 py-0">Gadgets</button>
+                           </div>
+                           <h5 class="card-title text-capitalize w-100 twolinelimit">Home techonoligy vs. Smart Home
+                              <br />automation
+                              technology
+                           </h5>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                     <div class="card text-bg-dark border border-0 position-relative">
+                        <div class="bgshadow position-absolute bottom-0 z-1"></div>
+                        <img src="./img/ar3.jpg" class="card-img objimg" alt="art image">
+                        <div class="card-img-overlay align-content-end flex-wrap z-1">
+                           <div class="d-flex">
+                              <button
+                                 class="btn btn-success text-white link-light text-capitalize mb-2 rounded-3 me-2 py-0">Smart
+                                 Home</button>
+                           </div>
+                           <h6 class="card-title text-capitalize w-100 twolinelimit mb-0">Home techonoligy vs. Smart
+                              Home
+                              <br />automation
+                              technology
+                           </h6>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                     <div class="card text-bg-dark border border-0 position-relative">
+                        <div class="bgshadow position-absolute bottom-0 z-1"></div>
+                        <img src="./img/ar4.jpg" class="card-img objimg" alt="art image">
+                        <div class="card-img-overlay align-content-end flex-wrap z-1">
+                           <div class="d-flex">
+                              <button
+                                 class="btn btn-success text-white link-light text-capitalize mb-2 rounded-3 me-2 py-0">Smart
+                                 Home</button>
+                           </div>
+                           <h6 class="card-title text-capitalize w-100 twolinelimit mb-0">Home techonoligy vs. Smart
+                              Home
+                              <br />automation
+                              technology
+                           </h6>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
-      <div class="accordion-item">
-         <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-               data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-               Accordion Item #3
-            </button>
-         </h2>
-         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-               <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-               plugin adds the appropriate classes that we use to style each element. These classes control the overall
-               appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-               CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
-               the <code>.accordion-body</code>, though the transition does limit overflow.
+   </section>
+
+   <!-- recent articel -->
+   <section class="recarticel py-md-5 py-sm-4 py-3" id="recarticel">
+      <div class="container">
+         <div class="top_txt text-center">
+            <h2 class="text-uppercase mb-md-4 mb-2 fw-bold">Recent Articles</h2>
+         </div>
+         <div class="row gx-4 row-gap-2 row-gap-md-4 row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+            <div class="col">
+               <div class="card border border-0">
+                  <img src="./img/pr6.jpg" class="card-img-top" alt="recent article img">
+                  <div class="card-body px-0">
+                     <div class="d-flex mb-2">
+                        <button
+                           class="btn btn-success text-white link-light text-capitalize mb-2 rounded-3 me-2 py-0">Smart
+                           Home</button>
+                        <button
+                           class="btn btn-primary text-white link-light text-capitalize mb-2  rounded-3 me-2 py-0">Gadgets</button>
+                     </div>
+                     <h5 class="card-title text-capitalize">Home automation and smart techonoligy voluptatem quia
+                        voluptas</h5>
+                     <p class="card-text mb-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece of classical Latin.</p>
+                     <p class="card-text d-flex">
+                        <span class="rounded-circle position-relative avatar d-inline me-2 "><img
+                              src=" https://i.pravatar.cc/22" class=" objimg" alt="avatar" /></span>
+                        <small class="fw-medium">SmartTech - Nov 29, 2026</small>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <div class="card border border-0">
+                  <img src="./img/pr5.jpg" class="card-img-top" alt="recent article img">
+                  <div class="card-body px-0">
+                     <div class="d-flex mb-2">
+                        <button
+                           class="btn btn-success text-white link-light text-capitalize mb-2 rounded-3 me-2 py-0">Smart
+                           Home</button>
+                        <button
+                           class="btn btn-primary text-white link-light text-capitalize mb-2  rounded-3 me-2 py-0">Gadgets</button>
+                     </div>
+                     <h5 class="card-title text-capitalize"> Finibus Bonorum smart techonoligy et Malorum</h5>
+                     <p class="card-text mb-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece of classical Latin.</p>
+                     <p class="card-text d-flex">
+                        <span class="rounded-circle position-relative avatar d-inline me-2 "><img
+                              src=" https://i.pravatar.cc/22" class=" objimg" alt="avatar" /></span>
+                        <small class="fw-medium">SmartTech - Nov 29, 2026</small>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <div class="card border border-0">
+                  <img src="./img/pr4.jpg" class="card-img-top" alt="recent article img">
+                  <div class="card-body px-0">
+                     <div class="d-flex mb-2">
+                        <button
+                           class="btn btn-success text-white link-light text-capitalize mb-2 rounded-3 me-2 py-0">Smart
+                           Home</button>
+                        <button
+                           class="btn btn-primary text-white link-light text-capitalize mb-2  rounded-3 me-2 py-0">Gadgets</button>
+                     </div>
+                     <h5 class="card-title text-capitalize">consectetur, adipisci velit, sed quia non numquam eius modi
+                        tempora</h5>
+                     <p class="card-text mb-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece of classical Latin.</p>
+                     <p class="card-text d-flex">
+                        <span class="rounded-circle position-relative avatar d-inline me-2 "><img
+                              src=" https://i.pravatar.cc/22" class=" objimg" alt="avatar" /></span>
+                        <small class="fw-medium">SmartTech - Nov 29, 2026</small>
+                     </p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col">
+               <div class="card border border-0">
+                  <img src="./img/pr3.jpg" class="card-img-top" alt="recent article img">
+                  <div class="card-body px-0">
+                     <div class="d-flex mb-2">
+                        <button
+                           class="btn btn-success text-white link-light text-capitalize mb-2 rounded-3 me-2 py-0">Smart
+                           Home</button>
+                        <button
+                           class="btn btn-primary text-white link-light text-capitalize mb-2  rounded-3 me-2 py-0">Gadgets</button>
+                     </div>
+                     <h5 class="card-title text-capitalize">minima veniam, quis nostrum exercitationem ullam corporis
+                     </h5>
+                     <p class="card-text mb-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece of classical Latin.</p>
+                     <p class="card-text d-flex">
+                        <span class="rounded-circle position-relative avatar d-inline me-2 "><img
+                              src=" https://i.pravatar.cc/22" class=" objimg" alt="avatar" /></span>
+                        <small class="fw-medium">SmartTech - Nov 29, 2026</small>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <div class="card border border-0">
+                  <img src="./img/pr2.jpg" class="card-img-top" alt="recent article img">
+                  <div class="card-body px-0">
+                     <div class="d-flex mb-2">
+                        <button
+                           class="btn btn-success text-white link-light text-capitalize mb-2 rounded-3 me-2 py-0">Smart
+                           Home</button>
+                        <button
+                           class="btn btn-primary text-white link-light text-capitalize mb-2  rounded-3 me-2 py-0">Gadgets</button>
+                     </div>
+                     <h5 class="card-title text-capitalize">teachings of the great explorer of the truth, the
+                        master-builder of human</h5>
+                     <p class="card-text mb-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece of classical Latin.</p>
+                     <p class="card-text d-flex">
+                        <span class="rounded-circle position-relative avatar d-inline me-2 "><img
+                              src=" https://i.pravatar.cc/22" class=" objimg" alt="avatar" /></span>
+                        <small class="fw-medium">SmartTech - Nov 29, 2026</small>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col">
+               <div class="card border border-0">
+                  <img src="./img/pr1.jpg" class="card-img-top" alt="recent article img">
+                  <div class="card-body px-0">
+                     <div class="d-flex mb-2">
+                        <button
+                           class="btn btn-success text-white link-light text-capitalize mb-2 rounded-3 me-2 py-0">Smart
+                           Home</button>
+                        <button
+                           class="btn btn-primary text-white link-light text-capitalize mb-2  rounded-3 me-2 py-0">Gadgets</button>
+                     </div>
+                     <h5 class="card-title text-capitalize">sed quia non numquam eius modi tempora incidunt ut labore
+                     </h5>
+                     <p class="card-text mb-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece of classical Latin.</p>
+                     <p class="card-text d-flex">
+                        <span class="rounded-circle position-relative avatar d-inline me-2 "><img
+                              src=" https://i.pravatar.cc/22" class=" objimg" alt="avatar" /></span>
+                        <small class="fw-medium">SmartTech - Nov 29, 2026</small>
+                     </p>
+                  </div>
+               </div>
             </div>
          </div>
+         <div class="row text-center">
+            <div class="col mt-5"><img src="./img/ad.jpg" alt="ad"></div>
+         </div>
       </div>
-   </div>
+   </section>
+
+
+   <!-- footer -->
+   <footer class="py-md-5 py-sm-4 py-3 bg-dark text-white ">
+      <div class="container">
+         <div class="row  flex-wrap mb-2 mb-sm-3 mb-md-4 mb-lg-5 ftrtop">
+            <h2 class="mb-md-4 mb-2 fw-bold me-4 d-inline-block">Get The latest Smart Gadgets news</h2>
+            <div class="row gx-3 row-gap-3 pt-2">
+               <div class="col-12 col-md-5">
+                  <input type="text" class="form-control bg-dark text-white border-primary" placeholder="First name"
+                     aria-label="Full Name">
+               </div>
+               <div class="col-12 col-md-5">
+                  <input type="email" class="form-control bg-dark text-white border-primary"
+                     id="exampleFormControlInput1" placeholder="Email Address">
+               </div>
+               <div class="col-12 col-md-2">
+                  <button class="btn btn-primary text-white link-light animbtn">Stay Smart</button>
+               </div>
+            </div>
+         </div>
+         <div class="row  flex-wrap gx-4 row-gap-2 row-gap-md-4 row-cols-1 row-cols-lg-4 row-cols-md-2">
+            <div class="col d-flex align-items-md-center">
+               <img src="./img/ftrlogo.png" alt="brand logo" class="footerlogo">
+            </div>
+            <div class="col">
+               <h4 class="text-uppercase mb-2 mb-md-4">Quick Links</h4>
+               <ul class="text-capitalize list-unstyled">
+                  <li><a href="#" class="text-white text-decoration-none fw-light pb-3 d-inline-block"><small><i
+                              class="bi bi-chevron-right me-1 text-white-50"></i></small> Services</a></li>
+                  <li><a href="#" class="text-white text-decoration-none fw-light pb-3 d-inline-block"><small><i
+                              class="bi bi-chevron-right me-1 text-white-50"></i></small> Store</a></li>
+                  <li><a href="#" class="text-white text-decoration-none fw-light pb-3 d-inline-block"><small><i
+                              class="bi bi-chevron-right me-1 text-white-50"></i></small> Blog</a></li>
+                  <li><a href="#" class="text-white text-decoration-none fw-light pb-3 d-inline-block"><small><i
+                              class="bi bi-chevron-right me-1 text-white-50"></i></small> About us</a></li>
+               </ul>
+            </div>
+            <div class="col">
+               <h4 class="text-uppercase  mb-2 mb-md-4">Help and support</h4>
+               <ul class="text-capitalize list-unstyled">
+                  <li><a href="#" class="text-white text-decoration-none fw-light pb-3 d-inline-block"><small><i
+                              class="bi bi-chevron-right me-1 text-white-50"></i></small> Contact us</a></li>
+                  <li><a href="#" class="text-white text-decoration-none fw-light pb-3 d-inline-block"><small><i
+                              class="bi bi-chevron-right me-1 text-white-50"></i></small> Terms & conditions</a>
+                  </li>
+                  <li><a href="#" class="text-white text-decoration-none fw-light pb-3 d-inline-block"><small><i
+                              class="bi bi-chevron-right me-1 text-white-50"></i></small> privacy policy</a></li>
+               </ul>
+            </div>
+            <div class="col">
+               <h4 class="text-uppercase  mb-2 mb-md-4">Follow Us</h4>
+               <ul class="list-unstyled d-flex">
+                  <li><a href="#" class="text-white link-cyan fs-4 me-3"><i class="bi bi-facebook"></i></a></li>
+                  <li><a href="#" class="text-white link-cyan fs-4 me-3"><i class="bi bi-instagram"></i></a></li>
+                  <li><a href="#" class="text-white link-cyan fs-4 me-3"><i class="bi bi-linkedin"></i></a></li>
+                  <li><a href="#" class="text-white link-cyan fs-4 me-3"><i class="bi bi-youtube"></i></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="row text-center mt-5 text-white-50">
+            <p>© 2015 - <span id="footeryear"></span> Tej R. All Rights Reserved.
+            </p>
+         </div>
+      </div>
+   </footer>
+
+   <script>
+      const currentYear = new Date().getFullYear();
+      document.querySelector('#footeryear').innerHTML = currentYear;
+   </script>
+
+
 </body>
 
 </html>
