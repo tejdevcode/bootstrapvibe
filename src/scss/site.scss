@@ -47,6 +47,11 @@ img {
    max-width: 100%;
 }
 
+.wow {
+   visibility: hidden;
+}
+
+
 .animbtn {
    background-color: #0d6efd;
    transition: background-position .6s cubic-bezier(.16, 1, .3, 1);

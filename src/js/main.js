@@ -2,6 +2,7 @@
 //import '../scss/styles.scss'
 
 // Import all of Bootstrap's JS
-new WOW().init();
+new WOW().init()
+
 
 import * as bootstrap from 'bootstrap'

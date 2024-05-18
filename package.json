@@ -1,10 +1,11 @@
 {
   "name": "bootstrapvibe",
   "version": "1.0.0",
-  "description": "",
+  "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Vite.",
   "main": "index.js",
   "scripts": {
     "start": "vite",
+    "build": "vite build --emptyOutDir",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,6 +19,7 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
-    "node": "^20.13.1"
+    "node": "^20.13.1",
+    "wowjs": "^1.1.3"
   }
 }
