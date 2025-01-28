@@ -227,6 +227,10 @@ header {
       background: #f6f6f6;
       font-size: clamp(42px, 4vw, 60px);
       box-shadow: 0px 5px 16px 0 #d2d2d2;
+
+      @include media-breakpoint-up(xl) {
+         line-height: 91px;
+      }
    }
 }
 
@@ -364,6 +368,7 @@ footer {
    height: 54px;
    opacity: 0.65;
    transition: 0.5s all;
+   z-index: 22;
 
    &:hover {
       opacity: 1;
@@ -374,5 +379,13 @@ footer {
       font-size: 30px;
       display: block;
       margin: -6px 0 0 -7px;
+   }
+}
+
+/* responsivee */
+
+@media(max-width:767px) {
+   .mobanimhide {
+      overflow-x: hidden;
    }
 }

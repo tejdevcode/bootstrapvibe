@@ -30,5 +30,18 @@ function backToTop() {
    document.documentElement.scrollTop = 0;
 }
 
+// For Bootstrap 5
+const navLinks = document.querySelectorAll('.nav-link')
+const menuToggle = document.getElementById('navbarNav')
+const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
+navLinks.forEach((l) => {
+   l.addEventListener('click', () => {
+      if (menuToggle.classList.contains('show')) {
+         bsCollapse.toggle()
+      }
+   })
+})
+
+
 
 import * as bootstrap from 'bootstrap'
