@@ -1,0 +1,4 @@
+for live>
+1>npm run build
+2> move index.html form dist to root
+3> change src files urls
